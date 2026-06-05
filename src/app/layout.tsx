@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "UUID Studio | Fast UUID v4 Generator",
-  description: "Generate, search, format, and copy secure version 4 UUIDs from a polished local-first interface.",
+  title: "UUID Studio | Online UUID v4 Generator",
+  description: "Generate one secure Version 4 UUID, tap to copy it, and learn how UUIDs work in a polished no-history interface.",
 };
 
 export const viewport: Viewport = {
