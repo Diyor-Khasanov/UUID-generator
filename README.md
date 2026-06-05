@@ -1,41 +1,43 @@
-# Modern UUID Generator
+# UUID Studio
 
-A sleek, performant, and user-friendly UUID (Version 4) generator built with the latest web technologies.
+A polished, local-first UUID (Version 4) generator built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and Lucide Icons.
 
 ## Features
 
-- ✨ **Instant Generation**: Generate single or multiple UUIDs with one click.
-- 🎨 **Impressive UI**: Modern, clean design with dark mode support.
-- 🎬 **Smooth Animations**: Powered by Framer Motion for a fluid experience.
-- 📋 **Copy to Clipboard**: Quick copy with visual feedback.
-- 📱 **Fully Responsive**: Works perfectly on mobile, tablet, and desktop.
-- 🛠️ **Built with**:
-  - [Next.js](https://nextjs.org/) (App Router)
-  - [TypeScript](https://www.typescriptlang.org/)
-  - [Tailwind CSS](https://tailwindcss.com/)
-  - [Framer Motion](https://www.framer.com/motion/)
-  - [Lucide Icons](https://lucide.dev/)
-  - [UUID](https://www.npmjs.com/package/uuid)
+- ✨ **Batch generation**: Generate 1-100 UUIDs in a single action with quick-pick presets.
+- 🔐 **Secure UUID v4 logic**: Uses `crypto.randomUUID()` when available, with the `uuid` package as a fallback.
+- 🧭 **Local-first history**: Keeps the latest 100 generated UUIDs in browser local storage.
+- 🔎 **Searchable results**: Filter UUID history with or without hyphens.
+- 🎛️ **Formatting controls**: Toggle uppercase output and canonical hyphen grouping without regenerating IDs.
+- 📋 **Copy workflows**: Copy an individual UUID or every currently visible result.
+- 🎨 **Responsive UI**: Gradient hero, sticky controls, live preview, dark-mode-aware styling, and animated result cards.
 
 ## Getting Started
 
-First, install the dependencies:
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Then, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## Quality Checks
+
+```bash
+npm run lint
+npm run build
+```
 
 ## Usage
 
-1. Select the number of UUIDs you want to generate (1, 5, 10, 20, or 50).
-2. Click the **Generate** button.
-3. Click the copy icon next to any UUID to copy it to your clipboard.
-4. Use the **Clear all** button to reset the history.
+1. Choose a quantity or enter any value from 1 to 100.
+2. Toggle uppercase or hyphen formatting if desired.
+3. Click **Generate** to prepend new UUIDs to the local history.
+4. Search the history, copy individual UUIDs, copy all visible results, or clear the list.
